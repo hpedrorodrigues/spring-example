@@ -18,6 +18,8 @@ class EmployeeService(private val repository: EmployeeRepository) {
 
   fun existsByName(name: String): Mono<Boolean> = repository.existsByName(name)
 
+  fun deleteAll(): Mono<Void> = repository.deleteAll()
+
   @Transactional
   fun saveMonoDSL(name: String): Mono<Employee> = mono {
     repository.save(Employee(name = name)).awaitSingle()
