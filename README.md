@@ -1,8 +1,13 @@
 # Spring example
 
-Running this project
+A tiny project to help learn more about Spring + Project Reactor + Kotlin Coroutines.
+
+## Running this project
 
 ```bash
+# Running PostgreSQL container
 docker-compose up -d
-gradle clean build
+
+# Running tests
+./gradlew test
 ```
