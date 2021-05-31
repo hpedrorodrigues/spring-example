@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Example
+  profiles:
+    active: dev
+  r2dbc:
+    url: r2dbc:pool:postgres://localhost:5432/example
+    username: example
+    password: example
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /management/actuator
+  server:
+    port: 8081
