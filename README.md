@@ -1,6 +1,6 @@
 # Spring example
 
-A tiny project to help learn more about Spring + Project Reactor + Kotlin Coroutines.
+A tiny project to help learn more about Spring Webflux + Kotlin Coroutines + ReactiveTransactionManager.
 
 ## Running this project
 
